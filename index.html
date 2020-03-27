@@ -10,10 +10,12 @@
 <body>
     <!-- 스킵네비 -->
     <div id="skipNavi">
-        <a href="#container">본문 바로가기</a>
-        <a href="#gnb">주메뉴 바로가기</a>
-        <a href="#sitemap">사이트맵 바로가기</a>
-        <a href="#footer">하단메뉴 바로가기</a>
+        <ul title="접근성을 고려한 바로가기">
+            <li><a href="#container">본문 바로가기</a></li>
+            <li><a href="#gnb">주메뉴 바로가기</a></li>
+            <li><a href="#sitemap">사이트맵 바로가기</a></li>
+            <li><a href="#footer">하단메뉴 바로가기</a></li>
+        </ul>
     </div>
     <!-- //스킵네비 -->
     <!-- wrap -->
@@ -166,16 +168,17 @@
                             <li><a href="#">링크드인</a></li>
                         </ul>
                     </dd>
-                    <dt><a href="#">KOR</a></dt>
+                    <dt><a href="#">언어</a></dt>
                     <dd>
                         <ul>
+                            <li><a href="#">KOR</a></li>
                             <li><a href="#">ENG</a></li>
                             <li><a href="#">CHN</a></li>
                             <li><a href="#">JPN</a></li>
                         </ul>
                     </dd>
                 </dl>
-                <img src="images/btn_srch_ico.png" alt="검색창 열기" />
+                <a href="#"><img src="images/btn_srch_ico.png" alt="검색창 열기" /></a>
             </div>
             <!-- //탑메뉴 -->
             <!-- 검색영역 -->
@@ -185,7 +188,15 @@
                         <legend>검색영역</legend>
                         <label for="srch_window">검색창</label>
                         <input id="srch_window" type="search" />
-                        <input type="image" src="#" alt="검색버튼" />
+                        <input type="image" src="images/btn_srch_ico_l.png" alt="검색버튼" />
+                        <div class="often_srch">
+                            <ul>
+                                <li><a href="#">Product Search</a></li>
+                                <li><a href="#">Component Library</a></li>
+                                <li><a href="#">방문신청</a></li>
+                                <li><a href="#">사업장소개</a></li>
+                            </ul>
+                        </div>
                     </fieldset>
                 </form>
             </div>
