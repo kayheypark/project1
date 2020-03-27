@@ -1,0 +1,18 @@
+/* 리셋연결 */
+@import url("reset.css");
+
+/*폰트*/
+@font-face {font-family: "NotoSans-Bold"; src:url(../font/NotoSans-Bold.ttf) ;}
+@font-face {font-family: "NotoSans-BoldItalic"; src:url(../font/NotoSans-BoldItalic.ttf) ;}
+@font-face {font-family: "NotoSans-Italic"; src:url(../font/NotoSans-Italic.ttf) ;}
+@font-face {font-family: "NotoSans-Regular"; src:url(../font/NotoSans-Regular.ttf) ;}
+
+@font-face {font-family: "NotoSansKR-Black"; src: url(../font/NotoSansKR-Black.otf);}
+@font-face {font-family: "NotoSansKR-Bold"; src: url(../font/NotoSansKR-Bold.otf);}
+@font-face {font-family: "NotoSansKR-Light"; src: url(../font/NotoSansKR-Light.otf);}
+@font-face {font-family: "NotoSansKR-Medium"; src: url(../font/NotoSansKR-Medium.otf);}
+@font-face {font-family: "NotoSansKR-Regular"; src: url(../font/NotoSansKR-Regular.otf;)}
+@font-face {font-family: "NotoSansKR-Thin"; src: url(../font/NotoSansKR-Thin.otf);}
+
+/* common */
+body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
