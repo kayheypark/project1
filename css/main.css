@@ -16,3 +16,41 @@
 
 /* common */
 body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
+
+/*layout*/
+
+#wrap {width: 100%; border: 1px solid red;}
+    #header {height: 70px; border: 1px solid blue; }
+    #header:after {content: "";display: block;clear: both;}
+    #main_banner {width: 1920px; border: 1px solid yellow;}
+    #main_banner:after {content: "";display: block;clear: both;}
+    #container {border: 1px solid yellow;}
+     .aboutus_warp {}
+     .aboutus_warp .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
+     .newsroom_wrap {}
+     .newsroom_wrap .box_wrap {width: 1332px; margin: 0 auto; border: 1px solid black;}
+     .product_wrap {}
+     .product_wrap .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
+     #container:after {content: "";display: block;clear: both;}
+    #sitemap_wrap {border: 1px solid yellow;}
+    #sitemap_wrap .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
+    #sitemap_wrap:after {content: "";display: block;clear: both;}
+    #footer {width: 1920px; height: 137px; border: 1px solid blue;}
+.to_top {}
+
+/*헤더*/
+    /*로고*/
+    h1.logo {position: absolute; top: 17px; left: 0;}
+    /*주메뉴*/
+    .gnb_wrap {width: 1920px; height: 70px; margin: 0 auto;}
+        ul.gnb { width: 700px;height: 70px;  margin: 0 auto; border: 1px solid black;}
+        ul.gnb li {float: left; margin-right: 89px; font-weight: bold;}
+        ul.gnb li:last-child {margin-right: 0;}
+        ul.gnb li a {display: block; height: 70px; line-height: 70px; text-decoration: none;
+        color: black;
+        }
+        ul.gnb li ul {display: none;}
+        ul.gnb li ul li {}
+
+    /* 탑메뉴 */
+    .topMenu_Area {position: absolute; top: 0; right: 0;}
