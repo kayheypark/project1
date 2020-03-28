@@ -19,11 +19,11 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
 
 /*layout*/
 
-#wrap {width: 100%; border: 1px solid red;}
-    #header {height: 70px; border: 1px solid blue; }
+#wrap {width: 100%; }
+    #header {height: 70px;}
     #header:after {content: "";display: block;clear: both;}
-    #main_banner {width: 1920px; border: 1px solid yellow;}
-    #main_banner:after {content: "";display: block;clear: both;}
+    .main_banner {width: 1920px;}
+    .main_banner:after {content: "";display: block;clear: both;}
     #container {border: 1px solid yellow;}
      .aboutus_warp {}
      .aboutus_warp .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
@@ -40,17 +40,52 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
 
 /*헤더*/
     /*로고*/
-    h1.logo {position: absolute; top: 17px; left: 0;}
+    h1.logo {position: absolute; top: 17px; left: 30px;}
     /*주메뉴*/
     .gnb_wrap {width: 1920px; height: 70px; margin: 0 auto;}
-        ul.gnb { width: 700px;height: 70px;  margin: 0 auto; border: 1px solid black;}
-        ul.gnb li {float: left; margin-right: 89px; font-weight: bold;}
-        ul.gnb li:last-child {margin-right: 0;}
-        ul.gnb li a {display: block; height: 70px; line-height: 70px; text-decoration: none;
-        color: black;
+        ul.gnb {position: relative;  width: 700px;height: 70px;  margin: 0 auto;}
+        /*1단리스트*/
+        ul.gnb > li {float: left; margin-right: 89px; font-size: 17 px; font-weight: bold; letter-spacing: -1px;}
+        ul.gnb > li:last-child {margin-right: 0;}
+        ul.gnb li a {
+            display: block; height: 70px;
+            line-height: 70px;
+            text-decoration: none;
+            color: black;
         }
-        ul.gnb li ul {display: none;}
+        /*2단리스트*/
+        ul.gnb li ul {position: absolute; top: 70px; display: none;}
         ul.gnb li ul li {}
-
+        ul.gnb li:first-child ul li {}
+        /*3단리스트*/
+        
     /* 탑메뉴 */
-    .topMenu_Area {position: absolute; top: 0; right: 0;}
+        .topMenu_Area {position: absolute; top: 0; right: 0; width: 180px; height: 70px;}
+            .topMenu {}
+            .topMenu dt {float: left;}
+            .topMenu dt a {display: block; width: 60px; height: 70px; font-size: 12px; line-height: 70px; text-align: center; text-decoration: none; font-weight: bold; color: #000;}
+            .topMenu dd {display: none;}
+            .btn_srch {float: left; background: #043285; width: 42px; height: 52px; padding-top: 18px; padding-left: 18px;}
+
+/*메인배너*/
+.main_banner {}
+.main_banner ul {}
+.main_banner ul li {position: relative;}
+.main_banner ul li video {}
+.main_banner ul li p {
+    position: absolute;
+    top: 28%;
+    left: 50%x;
+    color: #fff;
+    opacity: 0.85;
+    font-size: 40px;
+    text-align: center;
+    width: 1920px;
+}
+.main_banner {}
+
+/*버튼박스*/
+
+/*잠시안보이게*/
+li#slide2,
+li#slide3 {display: none;}
