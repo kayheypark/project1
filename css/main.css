@@ -24,15 +24,16 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
     #header:after {content: "";display: block;clear: both;}
     .main_banner {width: 1920px;}
     .main_banner:after {content: "";display: block;clear: both;}
-    #container {border: 1px solid yellow;}
+    #container {}
      .aboutus_warp {}
-     .aboutus_warp .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
+     .aboutus_warp .inner {width: 1332px; margin: 0 auto;}
+     .aboutus_warp::after {content: "";display: block;clear: both;}
      .newsroom_wrap {}
      .newsroom_wrap .box_wrap {width: 1332px; margin: 0 auto; border: 1px solid black;}
      .product_wrap {}
      .product_wrap .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
      #container:after {content: "";display: block;clear: both;}
-    #sitemap_wrap {border: 1px solid yellow;}
+    #sitemap_wrap {}
     #sitemap_wrap .inner {width: 1332px; margin: 0 auto; border: 1px solid black;}
     #sitemap_wrap:after {content: "";display: block;clear: both;}
     #footer {width: 1920px; height: 137px; border: 1px solid blue;}
@@ -73,6 +74,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
 .main_banner ul {}
 .main_banner ul li {position: relative;}
 .main_banner ul li video {position: relative;}
+
 .main_banner ul li p {
     position: absolute;
     top: 28%;
@@ -85,7 +87,8 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
 }
 
     /*컨트롤박스 0 0 0 ll */
-    .slide_ctrl {   position: absolute;
+    /*컨트롤 박스 크기*/
+    .slide_ctrl {position: absolute;
         bottom: 30px;
         left: 900px;}
     .slide_ctrl li {float: left; margin-right: 15px; }
@@ -98,7 +101,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
         border: 1px solid #aaa; border-radius: 10px;
         background: #aaa;
     }
-    .slide_ctrl li a:hover,:target {border: 1px solid #fff; border-radius: 10px;
+    .slide_ctrl li a:hover {border: 1px solid #fff; border-radius: 10px;
         background: #fff;}
 
     .slide_ctrl li.pause {padding-top: 1.5px;}
@@ -120,10 +123,59 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
         background: url(/images/slide_arr_btn.png) no-repeat 0 0;}
         .prev {}
         .btn_box button.next {margin-left: 1761px; background-position: -30px 0;}
+    
+    /*영상2,3 잠시안보이게*/
+    li#slide2,
+    li#slide3 {display: none;} 
 
 
+/*컨테이너*/
+#container {margin-top: 90px;}
+/*기업소개*/
+
+.aboutus_warp {}
+.aboutus_warp .inner {height: 500px;}
+.aboutus_warp .inner h2 {font-weight: bold; font-size: 35px; text-align: center; margin-bottom: 71px;}
+.aboutus_warp .inner ul { width: 1200px; margin: 0 auto;}
+.aboutus_warp .inner ul li {float: left; 
+    width: 300px;
+     text-align: center;
+     background: url(../images/icon_aboutus_01.png) no-repeat 50% 0;
+  }
+.aboutus_warp .inner ul li:nth-child(2) {width: 210px; background-image: url(../images/icon_aboutus_02.png);}
+.aboutus_warp .inner ul li:nth-child(3) {background-image: url(../images/icon_aboutus_03.png);}
+.aboutus_warp .inner ul li:nth-child(4) {width: 300px; background-image: url(../images/icon_aboutus_04.png);}
+.aboutus_warp dt {font-weight: bold;padding-top: 100px;}
+.aboutus_warp dd {padding-top: 40px;}
+span.num {font-size: 45px;}
+p.more {display: block; width: 140px; height: 45px; margin: 0 auto;}
+ p.more a {float: left; display: block;
+    width: 140px; height: 45px;
+    background: #043285;
+    color: #fff;
+    text-decoration: none;
+    line-height: 45px;
+padding-left: 40px;
+
+}
+
+.more_wrap {clear: both; width: 1000px; height: 70px; margin: 0 auto;
+    padding-top: 50px;}
+
+.aboutus_warp p:last-child { float: right; margin-top: -20px; font-size: 14px; color: #333333; }
+
+
+
+/*
+    .aboutus_warp {}
+    .aboutus_warp a {display: block; width: 180px; height: 45px; background: #043285; color: #fff;}
+    .aboutus_warp .inner {}
+    .aboutus_warp .inner h2 {font-weight: bold; font-size: 35px; text-align: center;}
+    .aboutus_warp .inner ul { width: 1000px; margin: 0 auto; border: 1px solid black;}
+    .aboutus_warp .inner ul li dl {}
+    .aboutus_warp dt {font-size: 17px; font-weight: bold;}
+    .aboutus_warp dd {}
+    span.num {font-size: 32px;}
+    .aboutus_warp .inner ul li {float: left;}
     
-    
-/*잠시안보이게*/
-li#slide2,
-li#slide3 {display: none;}
+    */
