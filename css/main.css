@@ -60,7 +60,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
         /*3단리스트*/
         
     /* 탑메뉴 */
-        .topMenu_Area {position: absolute; top: 0; right: 0; width: 180px; height: 70px;}
+        .topMenu_Area {position: absolute; top: 0; right: 0px; width: 180px; height: 70px;}
             .topMenu {}
             .topMenu dt {float: left;}
             .topMenu dt a {display: block; width: 60px; height: 70px; font-size: 12px; line-height: 70px; text-align: center; text-decoration: none; font-weight: bold; color: #000;}
@@ -69,9 +69,10 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
 
 /*메인배너*/
 .main_banner {}
+.main_banner .inner { position: relative;}
 .main_banner ul {}
 .main_banner ul li {position: relative;}
-.main_banner ul li video {}
+.main_banner ul li video {position: relative;}
 .main_banner ul li p {
     position: absolute;
     top: 28%;
@@ -82,10 +83,47 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans';}
     text-align: center;
     width: 1920px;
 }
-.main_banner {}
 
-/*버튼박스*/
+    /*컨트롤박스 0 0 0 ll */
+    .slide_ctrl {   position: absolute;
+        bottom: 30px;
+        left: 900px;}
+    .slide_ctrl li {float: left; margin-right: 15px; }
+    .slide_ctrl li a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        text-indent: -9999px;
+        overflow: hidden;
+        border: 1px solid #aaa; border-radius: 10px;
+        background: #aaa;
+    }
+    .slide_ctrl li a:hover,:target {border: 1px solid #fff; border-radius: 10px;
+        background: #fff;}
 
+    .slide_ctrl li.pause {padding-top: 1.5px;}
+    .slide_ctrl li.pause a {
+        width: 9px;
+        height: 9px;
+        border: none;
+        border-radius: 0;
+        background: url(/images/slide_btn1.png) no-repeat 0 0;
+        }
+    .slide_ctrl li.pause a:hover {background-position: -9px 0px;}
+
+    /*이전 다음 버튼 < >*/
+    .btn_box {position: absolute; top: 45%; left: 39px;}
+    .btn_box button {
+        text-indent: -9999px; overflow: hidden;
+        width: 30px; height: 57px;
+        border: none;
+        background: url(/images/slide_arr_btn.png) no-repeat 0 0;}
+        .prev {}
+        .btn_box button.next {margin-left: 1761px; background-position: -30px 0;}
+
+
+    
+    
 /*잠시안보이게*/
 li#slide2,
 li#slide3 {display: none;}
