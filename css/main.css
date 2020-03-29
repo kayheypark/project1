@@ -18,7 +18,6 @@
 body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-spacing: -1px;}
 
 /*layout*/
-
 #wrap {width: 100%; }
     #header {height: 70px;}
     #header:after {content: "";display: block;clear: both;}
@@ -37,7 +36,6 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     #sitemap_wrap .inner {width: 1332px; margin: 0 auto;}
     #sitemap_wrap:after {content: "";display: block;clear: both;}
     #footer {width: 1920px; height: 137px; background: #474b50; margin: 0 auto;}
-.to_top {}
 
 /*헤더*/
     /*로고*/
@@ -61,11 +59,31 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
         /*3단리스트*/
         
     /* 탑메뉴 */
-        .topMenu_Area {position: absolute; top: 0; right: 0px; width: 180px; height: 70px;}
-            .topMenu {}
+    .topMenu_Area {position: absolute; top: 0; right: 0px; width: 180px; height: 70px;}
+            .topMenu {position: relative;}
             .topMenu dt {float: left;}
             .topMenu dt a {display: block; width: 60px; height: 70px; font-size: 12px; line-height: 70px; text-align: center; text-decoration: none; font-weight: bold; color: #000;}
-            .topMenu dd {display: none;}
+            .topMenu dd {display: none; position: absolute; z-index: 2; top: 69px; width: 60px; height: 188px; background: #fff; border-top: 5px solid #043285;}
+                
+                /*SNS*/
+                .topMenu dd ul li a {display: block; width: 30px; height: 30px; margin: 12px auto; border: 1px solid #ddd; border-radius: 15px; background: #ddd url(../images/utill_sns_ico.png) no-repeat -30px 0; text-indent: -9999px; overflow: hidden;}
+                .topMenu dd ul li:nth-child(2) a{background-position: -60px 0 ;}
+                .topMenu dd ul li:nth-child(3) a{background-position: -0px 0 ;}
+                .topMenu dd ul li:nth-child(4) a{background-position: -120px 0 ;}
+                
+                /*언어선택*/
+                .topMenu dd.lang { left: 60px; height: 154px; padding-top: 4px;}
+                .topMenu dd.lang ul {padding-top: 5px;}
+                .topMenu dd.lang ul li {}
+                .topMenu dd.lang ul li a {text-indent:0; background: none; border: none; border-radius: 0; margin-bottom: 12px;}
+                .topMenu dd.lang ul li a {text-decoration: none; font-size: 14px; color: #333;}
+
+                        .topMenu dt:first-child:hover + dd,
+                        .topMenu dt.lang:hover + dd.lang,
+                        #wrap .sns:hover,
+                        #wrap .lang:hover {display: block;}
+
+                /*검색버튼*/
             .btn_srch {float: left; background: #043285; width: 42px; height: 52px; padding-top: 18px; padding-left: 18px;}
 
 /*메인배너*/
