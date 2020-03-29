@@ -22,7 +22,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 #wrap {width: 100%; }
     #header {height: 70px;}
     #header:after {content: "";display: block;clear: both;}
-    .main_banner {width: 1920px;}
+    .main_banner {}
     .main_banner:after {content: "";display: block;clear: both;}
     #container {}
      .aboutus_warp {}
@@ -70,7 +70,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 
 /*메인배너*/
 .main_banner {}
-.main_banner .inner { position: relative;}
+.main_banner .inner {position: relative; width: 1920px; margin: 0 auto;}
 .main_banner ul {}
 .main_banner ul li {position: relative;}
 .main_banner ul li video {position: relative;}
@@ -136,18 +136,19 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     .aboutus_warp {}
     .aboutus_warp .inner {height: 510px;}
     .inner h2 {font-weight: bold; font-size: 35px; text-align: center; margin-bottom: 71px;}
-    .aboutus_warp .inner ul { width: 1200px; margin: 0 auto;}
+    .aboutus_warp .inner ul { width: 1200px; margin: 0 auto; margin-left: 180px;}
     .aboutus_warp .inner ul li {float: left; 
-        width: 300px;
+        width: 250px;
         text-align: center;
         background: url(../images/icon_aboutus_01.png) no-repeat 50% 0;
+        border-right: 1px solid #ccc;
     }
-    .aboutus_warp .inner ul li:nth-child(2) {width: 210px; background-image: url(../images/icon_aboutus_02.png);}
+    .aboutus_warp .inner ul li:nth-child(2) {width: 250px; background-image: url(../images/icon_aboutus_02.png);}
     .aboutus_warp .inner ul li:nth-child(3) {background-image: url(../images/icon_aboutus_03.png);}
-    .aboutus_warp .inner ul li:nth-child(4) {width: 300px; background-image: url(../images/icon_aboutus_04.png);}
+    .aboutus_warp .inner ul li:nth-child(4) {padding-left: 25px; border-right: none; width: 300px; background-image: url(../images/icon_aboutus_04.png);}
     .aboutus_warp dt {font-weight: bold;padding-top: 100px;}
-    .aboutus_warp dd {padding-top: 40px;}
-    span.num {font-size: 45px;}
+    .aboutus_warp dd {padding-top: 40px; font-size: 25px; font-weight: 1;}
+    span.num {font-size: 45px; font-weight: 100;}
     p.more {display: block; width: 140px; height: 45px; margin: 0 auto;}
     p.more a {float: left; display: block;
         width: 140px; height: 45px;
@@ -162,7 +163,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     .more_wrap {clear: both; width: 1000px; height: 70px; margin: 0 auto;
         padding-top: 50px;}
 
-    .aboutus_warp p:last-child { float: right; margin-top: -20px; font-size: 14px; color: #333333; }
+    .aboutus_warp p:last-child { float: right; margin-right: -85px; margin-top: -20px; font-size: 14px; color: #333333; }
 
 
     /*뉴스룸*/
@@ -260,7 +261,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
  
 /*푸터바텀*/
 .foooter_bot {}
-.foooter_bot .list3 {padding-top: 30px;}
+.foooter_bot .list3 {padding-top: 15px;}
 .foooter_bot .list3 ul li {float: left;}
 .foooter_bot .list3 ul li a {text-decoration: none; color: #b2b2b4; margin-right: 29px;}
 .foooter_bot .list3 ul li:nth-child(3) a {color: #1cbeef;}
@@ -268,4 +269,10 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 .copyright {float: right; color: #b2b2b4; letter-spacing: 0px;}
 
 
-
+/*탑으로버튼*/
+.to_top {position: fixed; bottom: 15%; right: 10%; line-height: 75px;}
+.to_top a {display: block; width: 60px;  height: 60px;
+    border: 1px solid #111;
+    text-align: center; text-decoration: none; color:  black;
+background: #fff url(../images/top_btn_ico.png) no-repeat 50% 10px;
+}
