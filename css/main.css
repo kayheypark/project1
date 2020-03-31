@@ -59,7 +59,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
         /*3단리스트*/
         
     /* 탑메뉴 */
-    .topMenu_Area {position: absolute; top: 0; right: 0px; width: 180px; height: 70px;}
+    .topMenu_Area {position: absolute; top: 0;  right: 0px; width: 180px; height: 70px;}
             .topMenu {position: relative;}
             .topMenu dt {float: left;}
             .topMenu dt a {display: block; width: 60px; height: 70px; font-size: 12px; line-height: 70px; text-align: center; text-decoration: none; font-weight: bold; color: #000;}
