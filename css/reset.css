@@ -18,3 +18,6 @@ hr{display:none;}
 /* html5 reset.css */
 small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,time,mark,audio,video{margin: 0;padding: 0;}
 article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display: block;}
+
+/* For Print */
+@media print {#header, .snb, .aside {display: none;}}
