@@ -7,7 +7,6 @@
     <title>삼성전기</title>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
 </head>
 
 <body>
@@ -32,11 +31,11 @@
             <div class="gnb_wrap">
                 <!-- 주메뉴 gnb -->
                 <ul id="gnb" class="gnb">
-                    <li><a href="#">기업정보</a>
+                    <li class="company"><a href="#">기업정보</a>
                         <!-- 2단 전체레이아웃 -->
                         <div class="depth2_wrap">
                             <!-- 이너 -->
-                            <div class="inner">
+                            <div class="gnb_inner">
                                 <ul>
                                     <li><a href="#">기업소개</a>
                                         <ul>
@@ -77,97 +76,129 @@
                         </div>
                         <!-- //2단 전체레이아웃 -->
                     </li>
-                    <li><a href="#">인재채용</a>
-                        <ul>
-                            <li><a href="#">직무소개</a>
+                    <li class="careers"><a href="#">인재채용</a>
+                        <!-- 2단 전체레이아웃 -->
+                        <div class="depth2_wrap">
+                            <!-- gnb_inner -->
+                            <div class="gnb_inner">
                                 <ul>
-                                    <li><a href="#">직군별 직무 소개</a></li>
-                                    <li><a href="#">전공별 직무 소개</a></li>
+                                    <li><a href="#">직무소개</a>
+                                        <ul>
+                                            <li><a href="#">직군별 직무 소개</a></li>
+                                            <li><a href="#">전공별 직무 소개</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">회사생활</a></li>
+                                    <li><a href="#">채용프로세스</a></li>
+                                    <li><a href="#">채용공고</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#">회사생활</a></li>
-                            <li><a href="#">채용프로세스</a></li>
-                            <li><a href="#">채용공고</a></li>
-                        </ul>
+                            </div>
+                            <!-- //gnb_inner -->
+                        </div>
+                        <!-- //2단 전체레이아웃 -->
                     </li>
-                    <li><a href="#">뉴스룸</a>
-                        <ul>
-                            <li><a href="#">뉴스</a></li>
-                            <li><a href="#">뉴스레터</a>
+                    <li class="newsroom"><a href="#">뉴스룸</a>
+                        <!-- 2단 전체레이아웃 -->
+                        <div class="depth2_wrap">
+                            <!-- gnb_inner -->
+                            <div class="gnb_inner">
                                 <ul>
-                                    <li><a href="#">뉴스레터 보기</a></li>
-                                    <li><a href="#">뉴스레터 신청</a></li>
+                                    <li><a href="#">뉴스</a></li>
+                                    <li><a href="#">뉴스레터</a>
+                                        <ul>
+                                            <li><a href="#">뉴스레터 보기</a></li>
+                                            <li><a href="#">뉴스레터 신청</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                            <!-- //gnb_inner -->
+                        </div>
+                        <!-- //2단 전체레이아웃 -->
                     </li>
-                    <li><a href="#">제품정보</a>
-                        <ul>
-                            <li><a href="#">컴포넌트</a>
+                    <li class="product"><a href="#">제품정보</a>
+                        <!-- 2단 전체레이아웃 -->
+                        <div class="depth2_wrap">
+                            <!-- gnb_inner -->
+                            <div class="gnb_inner">
                                 <ul>
-                                    <li><a href="#">MLCC</a></li>
-                                    <li><a href="#">Inductor</a></li>
-                                    <li><a href="#">Chip Resistor</a></li>
-                                    <li><a href="#">Tantalum</a></li>
+                                    <li><a href="#">컴포넌트</a>
+                                        <ul>
+                                            <li><a href="#">MLCC</a></li>
+                                            <li><a href="#">Inductor</a></li>
+                                            <li><a href="#">Chip Resistor</a></li>
+                                            <li><a href="#">Tantalum</a></li>
+                                        </ul>
+                                        <div class="p_srch">
+                                            <a href="">
+                                                <p><strong>Product Search</strong></p>
+                                                <p>원하는 제품을 쉽고 빠르게 검색해보세요</p>
+                                            </a>
+                                        </div>
+                                        <div class="c_lib">
+                                            <a href="#">
+                                                <p><strong>Component Library</strong></p>
+                                                <p>시뮬레이션으로 제품을 한눈에 파악해보세요</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">모듈</a>
+                                        <ul>
+                                            <li><a href="#">Camera Module</a></li>
+                                            <li><a href="#">Communication Module</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">인쇄회로기판</a>
+                                        <ul>
+                                            <li><a href="#">Package Substrate</a></li>
+                                            <li><a href="#">RFPCB</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">적용분야</a>
+                                        <ul>
+                                            <li><a href="#">Automotive</a></li>
+                                            <li><a href="#">Mobile</a></li>
+                                            <li><a href="#">Computer</a></li>
+                                            <li><a href="#">Display</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                                <div class="p_srch">
-                                    <a href="">
-                                        <p><strong>Product Search</strong></p>
-                                        <p>원하는 제품을 쉽고 빠르게 검색해보세요</p>
-                                    </a>
-                                </div>
-                                <div class="c_lib">
-                                    <a href="#">
-                                        <p><strong>Component Library</strong></p>
-                                        <p>시뮬레이션으로 제품을 한눈에 파악해보세요</p>
-                                    </a>
-                                </div>
-                            </li>
-                            <li><a href="#">모듈</a>
-                                <ul>
-                                    <li><a href="#">Camera Module</a></li>
-                                    <li><a href="#">Communication Module</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">인쇄회로기판</a>
-                                <ul>
-                                    <li><a href="#">Package Substrate</a></li>
-                                    <li><a href="#">RFPCB</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">적용분야</a>
-                                <ul>
-                                    <li><a href="#">Automotive</a></li>
-                                    <li><a href="#">Mobile</a></li>
-                                    <li><a href="#">Computer</a></li>
-                                    <li><a href="#">Display</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            </div>
+                            <!-- //gnb_inner -->
+                        </div>
+                        <!-- 2단 전체레이아웃 -->
                     </li>
-                    <li><a href="#">고객지원</a>
-                        <ul>
-                            <li><a href="#">고객문의</a>
+                    <li class="customer"><a href="#">고객지원</a>
+                        <!-- 2단 전체레이아웃 -->
+                        <div class="depth2_wrap">
+                            <!-- gnb_inner -->
+                            <div class="gnb_inner">
                                 <ul>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">문의하기</a></li>
+                                    <li><a href="#">고객문의</a>
+                                        <ul>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">문의하기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sales Partners</a></li>
+                                    <li><a href="#">인증서</a>
+                                        <ul>
+                                            <li><a href="#">환경/안전/품질</a></li>
+                                            <li><a href="#">제품책임주의</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">기술자료</a>
+                                        <ul>
+                                            <li><a href="#">제품 카탈로그</a></li>
+                                            <li><a href="#">소프트웨어 라이브러리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">모조품에 대한 면책 B2Bi (EDI) 대금지불 안내 방문신청</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#">Sales Partners</a></li>
-                            <li><a href="#">인증서</a>
-                                <ul>
-                                    <li><a href="#">환경/안전/품질</a></li>
-                                    <li><a href="#">제품책임주의</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">기술자료</a>
-                                <ul>
-                                    <li><a href="#">제품 카탈로그</a></li>
-                                    <li><a href="#">소프트웨어 라이브러리</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">모조품에 대한 면책 B2Bi (EDI) 대금지불 안내 방문신청</a></li>
-                        </ul>
+                            </div>
+                            <!-- //gnb_inner -->
+                        </div>
+                        <!-- 2단 전체레이아웃 -->
                     </li>
                 </ul>
                 <!-- //주메뉴 gnb -->
