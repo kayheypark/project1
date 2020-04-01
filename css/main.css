@@ -19,8 +19,10 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 
 /*layout*/
 #wrap {width: 100%; }
-    #header {height: 70px;}
-    #header:after {content: "";display: block;clear: both;}
+    header {height: 70px;}
+        .gnb {width: 100%; max-width: 1920px; margin: 0 auto; z-index: 1000;}
+        .gnb .gnb_list {width: 695px; margin: 0 auto;}
+    header:after {content: "";display: block;clear: both;}
     .main_banner {}
     .main_banner:after {content: "";display: block;clear: both;}
     #container {}
@@ -41,24 +43,26 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     /*로고*/
     h1.logo {position: absolute; top: 17px; left: 30px;}
     /*주메뉴*/
-    .gnb_wrap {width: 1920px; height: 70px; margin: 0 auto;}
-        ul.gnb {position: relative;  width: 700px;height: 70px;  margin: 0 auto;}
+    .gnb_list {width: 100%; height: 70px; margin: 0 auto;}
+        ul.gnb_list {position: relative;  width: 100%;height: 70px;  margin: 0 auto; border: 1px solid red;}
         /*1단리스트*/
-        ul.gnb > li {float: left; margin-right: 89px; font-size: 17 px; font-weight: bold; letter-spacing: -1px;}
-        ul.gnb > li:last-child {margin-right: 0;}
-        ul.gnb li a {
+        ul.gnb_list > li {float: left; margin-right: 89px; font-size: 17px; font-weight: bold;}
+        ul.gnb_list > li:last-child {margin-right: 0;}
+        ul.gnb_list li a {
             display: block; height: 70px;
             line-height: 70px;
             text-decoration: none;
             color: black;
         }
         /*2단리스트*/
-        ul.gnb li ul {display: none;}
-        ul.gnb li:first-child ul {display: block; position: absolute; z-index: 1000; width: 100%; height: 600px; background: #ccc;}
+.depth2_wrap {position: absolute; top: 70px; left: 0; z-index: 1000; width: 100%; background: #ccc;}
+.gnb_inner ul li a {color: #fff;}
+#wrap .gnb_inner_heading > a {font-weight: bold; color: #1428a0;}
 
-        ul.gnb li ul li a {border: 1px solid red;}
 
-        /*3단리스트*/
+
+
+/*3단리스트*/
         
     /* 탑메뉴 */
     .topMenu_Area {position: absolute; top: 0;  right: 0px; width: 180px; height: 70px;}
