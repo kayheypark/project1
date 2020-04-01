@@ -20,8 +20,8 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 /*layout*/
 #wrap {width: 100%; }
     header { width: 100%; height: 70px; border: 1px solid blue;}
-        .gnb {width: 100%; margin: 0 auto; z-index: 1000;}
-        .gnb .gnb_list {width: 100%; margin: 0 auto;}
+        .gnb {width: 100%; margin: 0 auto; z-index: 1;}
+        .gnb .gnb_list {position: relative; width: 695px; height: 70px; margin: 0 auto;}
     header:after {content: "";display: block;clear: both;}
     .main_banner {}
     .main_banner:after {content: "";display: block;clear: both;}
@@ -43,9 +43,8 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     /*로고*/
     h1.logo {position: absolute; top: 17px; left: 30px;}
     /*주메뉴*/
-        ul.gnb_list {position: relative;  width: 100%;height: 70px;  margin: 0 auto; border: 6px solid red;}
         /*1단리스트*/
-        ul.gnb_list > li {float: left; margin-right: 89px; font-size: 17px; font-weight: bold;}
+        ul.gnb_list > li {margin-right: 89px;}
         ul.gnb_list > li:last-child {margin-right: 0;}
         ul.gnb_list li a {
             display: block; height: 70px;
@@ -54,9 +53,44 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
             color: black;
         }
         /*2단리스트*/
-.depth2_wrap {position: absolute; top: 70px; left: 0; z-index: 1000; width: 100%; border: 2px solid red; background: #ccc;}
 .gnb_inner ul li a {color: #fff;}
-#wrap .gnb_inner_heading > a {font-weight: bold; color: #1428a0;}
+
+
+
+
+
+
+header {z-index: 5; position: relative; width: 100%; height: 70px; background: #fff;}
+ .header_wrap {position: absolute; left: 0; top: 0; width: 100%; height: 70px;
+                border-bottom: 2px solid #ccc; background: rgba(0,0,0,0.5);}
+ .header_inner{position: relative; width: 100%;margin: 0 auto; border: 1px solid red;}
+
+ nav > ul {width: 100%; border: 3px solid red;}
+ nav > ul:after {content: ""; display: block; clear: both;}
+ nav > ul > li {width: 120px; float: left; text-align: center; line-height: 30px;}
+ nav > ul > li > ul {display: none; position: absolute; left: 0; top: 30px; width: 110px; padding: 5px;}
+
+ nav > ul > li:first-child > ul {left: 0;}
+ nav > ul > li:nth-child(2) > ul {left: 120px;}
+ nav > ul > li:nth-child(3) > ul {left: 240px;}
+ nav > ul > li:nth-child(4) > ul {left: 360px;}
+ nav > ul > li:last-child > ul {left: 480px;}
+
+nav >ul>li>a {position: relative; display: inline-block; width: 100%;}
+ nav > ul > li > a::after {content: ""; opacity: 0;
+                            position: absolute; left: 50%; bottom: 0;
+                            width: 0; height: 0; background: yellow;
+                            transform: translate(-50%, 0);
+                            transition: width .4s ease-in-out;
+
+}
+
+ nav > ul > li.on > a::after {content: ""; opacity: 1; width: 100%; height: 3px;}
+
+
+
+
+
 
 
 
@@ -68,7 +102,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
             .topMenu {position: relative;}
             .topMenu dt {float: left;}
             .topMenu dt a {display: block; width: 60px; height: 70px; font-size: 12px; line-height: 70px; text-align: center; text-decoration: none; font-weight: bold; color: #000;}
-            .topMenu dd {display: none; position: absolute; z-index: 2; top: 69px; width: 60px; height: 188px; background: #fff; border-top: 5px solid #043285;}
+            .topMenu dd {display: none; position: absolute; top: 69px; width: 60px; height: 188px; background: #fff; border-top: 5px solid #043285;}
                 
                 /*SNS*/
                 .topMenu dd ul li a {display: block; width: 30px; height: 30px; margin: 12px auto; border: 1px solid #ddd; border-radius: 15px; background: #ddd url(../images/utill_sns_ico.png) no-repeat -30px 0; text-indent: -9999px; overflow: hidden;}
