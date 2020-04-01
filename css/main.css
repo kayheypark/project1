@@ -53,9 +53,11 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
             color: black;
         }
         /*2단리스트*/
-        ul.gnb li ul {position: absolute; top: 70px; display: none;}
-        ul.gnb li ul li {}
-        ul.gnb li:first-child ul li {}
+        ul.gnb li ul {display: none;}
+        ul.gnb li:first-child ul {display: block; position: absolute; z-index: 1000; width: 100%; height: 600px; background: #ccc;}
+
+        ul.gnb li ul li a {border: 1px solid red;}
+
         /*3단리스트*/
         
     /* 탑메뉴 */
