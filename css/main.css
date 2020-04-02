@@ -19,10 +19,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 
 /*layout*/
 #wrap {width: 100%; }
-    header { width: 100%; height: 70px;}
-        .gnb {width: 100%; margin: 0 auto; z-index: 1;}
-        .gnb .gnb_list {position: relative; width: 1920px; height: 70px; margin: 0 auto;}
-    header:after {content: "";display: block;clear: both;}
+
     .main_banner {}
     .main_banner:after {content: "";display: block;clear: both;}
     #container {}
@@ -44,49 +41,35 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     h1.logo {position: absolute; top: 17px; left: 30px;}
     /*주메뉴*/
         /*1단리스트*/
-        ul.gnb_list > li {margin-right: 89px;}
-        ul.gnb_list > li:last-child {margin-right: 0;}
-        ul.gnb_list li a {
-            display: block; height: 70px;
-            line-height: 70px;
-            text-decoration: none;
-            color: black;
-        }
-        /*2단리스트*/
-.gnb_inner ul li a {color: #fff;}
-
-
-
-
-
-
-header {z-index: 5; position: relative; width: 100%; height: 70px; background: #fff;}
- .header_wrap {z-index: 500;     position: absolute; left: 0; top: 0; width: 100%; height: 70px;
-                border-bottom: 2px solid #ccc; background: #ccc;}
- .header_inner{position: relative; width: 100%;margin: 0 auto; }
-
- nav > ul {width: 100%; border: 3px solid red; margin: 0 auto;}
- nav > ul:after {content: ""; display: block; clear: both;}
- nav > ul > li {width: 120px; float: left; text-align: center; line-height: 30px;}
- nav > ul > li > ul {display: none; position: absolute; left: 0; top: 30px; width: 110px; padding: 5px;}
-
- nav > ul > li:first-child > ul {left: 0;}
- nav > ul > li:nth-child(2) > ul {left: 120px;}
- nav > ul > li:nth-child(3) > ul {left: 240px;}
- nav > ul > li:nth-child(4) > ul {left: 360px;}
- nav > ul > li:last-child > ul {left: 480px;}
-
-nav >ul>li>a {position: relative; display: inline-block; width: 100%;}
- nav > ul > li > a::after {content: ""; opacity: 0;
-                            position: absolute; left: 50%; bottom: 0;
-                            width: 0; height: 0; background: yellow;
-                            transform: translate(-50%, 0);
-                            transition: width .4s ease-in-out;
-
-}
-
- nav > ul > li.on > a::after {content: ""; opacity: 1; width: 100%; height: 3px;}
-
+        header {position: relative; width: 100%; height: 70px; background: #fff;}
+        .header_wrap {z-index: 1000; position: absolute; left: 0; top: 0; width: 100%; height: 70px;
+                       border-bottom: 2px solid #ccc; background: #ccc;}
+        .header_inner{width: 620px;margin: 0 auto;}
+       
+        nav {position: relative;}
+        nav > ul {width: 100%;}
+        nav > ul:after {content: ""; display: block; clear: both;}
+        nav > ul > li {width: 120px; float: left; text-align: center; line-height: 70px;}
+        nav > ul > li > ul {display: none; position: absolute; left: 0; top: 70px; width: 110px; padding: 5px;}
+       
+        nav > ul > li:first-child > ul {left: 0;}
+        nav > ul > li:nth-child(2) > ul {left: 120px;}
+        nav > ul > li:nth-child(3) > ul {left: 240px;}
+        nav > ul > li:nth-child(4) > ul {left: 360px;}
+        nav > ul > li:last-child > ul {left: 480px;}
+       
+       nav >ul>li>a {position: relative; display: inline-block; width: 100%;}
+        nav > ul > li > a::after {content: ""; opacity: 0;
+                                   position: absolute; left: 50%; bottom: 0;
+                                   width: 0; height: 0; background: yellow;
+                                   transform: translate(-50%, 0);
+                                   transition: width .4s ease-in-out;
+       
+       }
+       
+        nav > ul > li.on > a::after {content: ""; opacity: 1; width: 100%; height: 3px;}
+       
+        
 
 
 
