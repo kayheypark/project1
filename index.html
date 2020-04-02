@@ -11,7 +11,7 @@
         $(function() {
          //<![CDATA[
              $("nav>ul>li>a").bind("mouseover focus",function(){
-                $(".header_wrap").animate({"height":"200px"},300,"linear");
+                $(".header_wrap").animate({"height":"500px"},300,"linear");
 
                 $("nav>ul>li>ul").css("display","none");
                 $(this).next().css("display","block");
@@ -22,7 +22,7 @@
              });
 
             $("nav").bind("mouseleave blur",function(){
-                $(".header_wrap").stop().animate({"height":"30px"},300,"linear");
+                $(".header_wrap").stop().animate({"height":"70px"},300,"linear");
                 $("nav>ul>li>ul").css("display","none");
 
                 $("nav>ul>li").removeClass("on");
