@@ -1,0 +1,11 @@
+@import url(reset.css);
+/* reset.css */
+
+/* common */
+
+/* 레이아웃 */
+.spot {width: 1920px; height: 320px; margin: 0 auto;}
+.spot .inner {width: 1140px; height: 225px; margin: 0 309px; padding-top: 95px; border:  1px solid red;}
+
+/* 스팟 */
+.spot {background: url(../images/faq_visual_img.jpg) no-repeat 0 0;}
