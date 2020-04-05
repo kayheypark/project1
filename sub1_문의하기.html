@@ -356,19 +356,21 @@
                                     </select>
                                 </li>
                                 <!-- //국가 -->
-                                <!-- 이름 -->
-                                <li class="userNameL">
-                                    <label class="form_tit" for="lastName"><strong>*</strong> 이름</label>
-                                    <input type="text" id="lastName" title="이름을 입력해주세요" />
-                                </li>
-                                <!-- //이름 -->
-                                <!-- 성 -->
-                                <li class="userNameF">
-                                    <label class="form_tit" for="firstName"><strong>*</strong> 성</label>
-                                    <input type="text" id="firstName" title="성을 입력해주세요" />
-                                </li>
-                                <!-- //성 -->
-                                <!-- 회사 및 조직 -->
+                                <li class="nameLine">
+                                    <!-- 이름 -->
+                                        <div class="userNameL">
+                                            <label class="form_tit" for="lastName"><strong>*</strong> 이름</label>
+                                            <input type="text" id="lastName" title="이름을 입력해주세요" />
+                                        </div>
+                                    <!-- //이름 -->
+                                    <!-- 성 -->
+                                    <div class="userNameF">
+                                        <label class="form_tit" for="firstName"><strong>*</strong> 성</label>
+                                        <input type="text" id="firstName" title="성을 입력해주세요" />
+                                    </div>
+                                    </li>
+                                    <!-- //성 -->
+                                    <!-- 회사 및 조직 -->
                                 <li class="company">
                                     <label class="form_tit" for="company"><strong>*</strong> 회사/조직</label>
                                     <input type="text" id="company" title="회사/조직을 입력해주세요" />
@@ -384,13 +386,14 @@
                                 <li class="tel">
                                     <p><strong>*</strong> 전화번호</p>
                                     <input class="tel_first" type="text" id="tel" title="국가코드" placeholder="+82" />
+                                    <span> - </span>
                                     <input class="tel_last" type="text" id="number" title="나머지 번호를 입력해주세요" />
                                     <p class="example">Ex) +82 31-1234-1234, +82 03112341234</p>
                                 </li>
                                 <!-- //전화번호 -->
                                 <!-- 이메일 -->
-                                <li class="">
-                                    <label class="form_tit" for="userEmail"><strong>*</strong> 이메일</label>
+                                <li>
+                                    <label class="form_tit userEmail" for="userEmail"><strong>*</strong> 이메일</label>
                                     <input type="email" id="userEmail" title="이메일을 입력해주세요" />
                                 </li>
                                 <!-- //이메일 -->
@@ -401,11 +404,11 @@
                                 </li>
                                 <!-- //내용 -->
                                 <!-- 첨부파일 -->
-                                <li>
-                                    <p>첨부파일</p>
-                                    <label class="form_tit" for="file">찾아보기</label>
+                                <li class="attach">
+                                    <span>첨부파일</span>
                                     <input type="text" value="파일선택" disabled="disabled" class="file_text"
-                                        title="첨부파일 선택" />
+                                    title="첨부파일 선택" />
+                                    <label for="file">찾아보기</label>
                                     <input type="file" id="file" title="첨부파일을 선택해주세요" />
                                     <ul>
                                         <li>&#x203B; pg,jpeg,gif,png,bmp,doc,docx,hwp,xls,xlsx,zip,pdf,ppt,pptx 형식만 지원
