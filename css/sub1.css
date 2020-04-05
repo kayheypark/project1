@@ -1,10 +1,25 @@
-@import url(reset.css);
-/* reset.css */
+/* 리셋연결 */
+@import url("reset.css");
+
+/*폰트*/
+@font-face {font-family: "NotoSans-Bold"; src:url(../font/NotoSans-Bold.ttf) ;}
+@font-face {font-family: "NotoSans-BoldItalic"; src:url(../font/NotoSans-BoldItalic.ttf) ;}
+@font-face {font-family: "NotoSans-Italic"; src:url(../font/NotoSans-Italic.ttf) ;}
+@font-face {font-family: "NotoSans-Regular"; src:url(../font/NotoSans-Regular.ttf) ;}
+
+@font-face {font-family: "NotoSansKR-Black"; src: url(../font/NotoSansKR-Black.otf);}
+@font-face {font-family: "NotoSansKR-Bold"; src: url(../font/NotoSansKR-Bold.otf);}
+@font-face {font-family: "NotoSansKR-Light"; src: url(../font/NotoSansKR-Light.otf);}
+@font-face {font-family: "NotoSansKR-Medium"; src: url(../font/NotoSansKR-Medium.otf);}
+@font-face {font-family: "NotoSansKR-Regular"; src: url(../font/NotoSansKR-Regular.otf;)}
+@font-face {font-family: "NotoSansKR-Thin"; src: url(../font/NotoSansKR-Thin.otf);}
 
 /* common */
+body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-spacing: -1px; color: #333;}
 body a {text-decoration: none; color: black;}
 h2 {font-size: 50px; color: #fff;font-weight: bold;}
 h3 {font-size: 38px; font-weight: bold; margin-bottom: 30px; padding-bottom: 30px;}
+strong {font-weight: bold; color: #0079cc;}
 
 /* 레이아웃 */
 .spot {width: 1920px; height: 320px; margin: 0 auto;}
@@ -68,5 +83,19 @@ h3 {font-size: 38px; font-weight: bold; margin-bottom: 30px; padding-bottom: 30p
     height: 3px;
     background: #0079cc;
     content: "";}
+.step2 p.sec_txt {font-size: 16px;}
+.step2 p.form_desc {font-size: 16px; text-align: right; margin-bottom: 8px;}
+
+.info_form {width: 980px; padding: 55px 80px 50px; background-color: #f3f3f3; border-top: 1px solid #000;border-bottom: 1px solid #000;}
+.info_form select {width: 970px; height: 45px; padding-left: 10px;}
+.info_form li.product select {width: 310px; height: 45px; padding: 10px;}
+.info_form li.product select:nth-of-type(2) {margin: 0 16px;}
+.form_tit {display: block; font-weight: bold; font-size: 20px; width: 980px; margin: 13px 0;}
+li:first-child .form_tit {margin-top: 0;}
+
+.info_form input[type="text"], .info_form input[type="email"] {width: 958px; height: 45px; padding-left: 10px;}
+#tel {width: 310px;}
+#number {width: 625px;}
+
 
 /* 스텝3 */
