@@ -11,9 +11,10 @@ h3 {font-size: 38px; font-weight: bold; margin-bottom: 30px; padding-bottom: 30p
 .spot .inner {position: relative; width: 1140px; height: 225px; margin: 0 309px; padding-top: 95px;}
 #content {width: 1920px; margin: 0 auto; padding: 100px 0 160px; border: 1px solid red;}
 .faq::after {content: ""; display: block; clear: both;}
-.step1 {width: 1140px; margin: 0 auto;}
+.step1 {width: 1140px; margin: 0 auto; margin-bottom: 120px;}
 .step1::after {content: ""; display: block; clear: both;}
-.step2 {width: 1140px; border:  1px solid black; margin: 0 auto;}
+.step2 {width: 1140px;  margin: 0 auto;}
+.step2::after {content: ""; display: block; clear: both;}
 .agree {width: 1140px; border:  1px solid black; margin: 0 auto;}
 
 /* 스팟 */
@@ -49,14 +50,23 @@ h3 {font-size: 38px; font-weight: bold; margin-bottom: 30px; padding-bottom: 30p
                 }
 .step1 ul li:first-child a {color: #fff; background: #043285 url(../images/ico_inquiry_on_01.png)  no-repeat 50% 30px;}
 .step1 ul li:nth-child(2) a {background-image: url(../images/ico_inquiry_02.png);}
-.step1 ul li:nth-child(2) a {background-image: url(../images/ico_inquiry_03.png);}
-.step1 ul li:nth-child(2) a {background-image: url(../images/ico_inquiry_04.png);}
-.step1 ul li:nth-child(2) a {background-image: url(../images/ico_inquiry_05.png);}
-.step1 ul li:nth-child(2) a {background-image: url(../images/ico_inquiry_06.png);}
-.step1 ul li:nth-child(2) a {background-image: url(../images/ico_inquiry_07.png);}
+.step1 ul li:nth-child(3) a {background-image: url(../images/ico_inquiry_03.png);}
+.step1 ul li:nth-child(4) a {background-image: url(../images/ico_inquiry_04.png);}
+.step1 ul li:nth-child(5) a {background-image: url(../images/ico_inquiry_05.png);}
+.step1 ul li:nth-child(6) a {background-image: url(../images/ico_inquiry_06.png);}
+.step1 ul li:nth-child(7) a {background-image: url(../images/ico_inquiry_07.png);}
     
 .step1 ul li a { border-right: none;}
 .step1 ul li:last-child a { border-right: 1px solid #ccc;}
 /* 스텝2 */
+.step2 h3 {position: relative;}
+.step2 h3::after { 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #0079cc;
+    content: "";}
 
 /* 스텝3 */
