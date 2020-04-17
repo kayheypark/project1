@@ -149,3 +149,8 @@ li:first-child .form_tit {margin-top: 0;}
 .Item li {padding-left: 15px; background: url(../images/bg_list_dot.gif) no-repeat 0 50%;}
 p.notice {margin-top: 25px;}
 p.agree_bottom {width: 310px; padding-top: 30px;}
+
+.finalOk {display: block; width: 160px; height: 45px;
+     background: #043285; color:#fff;
+    margin: 0 auto;
+margin-top: 30px;}
