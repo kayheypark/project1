@@ -7,6 +7,7 @@
     <title>삼성전기</title>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script>
         $(function () {
             //<![CDATA[
@@ -191,30 +192,34 @@
         </div>
         <hr />
         <!-- 메인배너 -->
-        <div class="main_banner">
+        <div class="main_banner main_visual"> <!-- bodysection-->
             <h3 class="blind">메인배너</h3>
-            <div class="inner">
+            <div class="inner slide_wrap"> <!-- book_frame-->
                 <!-- 비디오와 글귀 -->
-                <ul>
-                    <li id="slide1" class="slide1">
-                        <video width="1920" height="830" autoplay mute loop poster="images/main_video_thum1.jpg">
+                
+                    <div id="slide1" class="slide1 slide active">
+                        <video autoplay mute loop poster="images/main_video_thum1.jpg">
                             <source src="images/main_video1.mp4" type="video/mp4">
                         </video>
                         <p><span>5G 시대를 맞이하여 더 앞선 기술로<br />더 나은 세상을 열어 갑니다</span></p>
-                    </li>
-                    <li id="slide2" class="slide2">
-                        <video width="1920" height="830" autoplay poster="images/main_video_thum2.jpg">
+                    </div>
+
+                    <div id="slide2" class="slide2 slide">
+                        <video autoplay mute loop poster="images/main_video_thum2.jpg">
                             <source src="images/main_video2.mp4" type="video/mp4">
                         </video>
                         <p><span>최첨단 스마트폰과 다양한 디바이스를 위한<br />최적의 솔루션으로 더 나은 내일을 만들고 있습니다</span></p>
-                    </li>
-                    <li id="slide3" class="slide3">
-                        <video width="1920" height="830" autoplay poster="images/main_video_thum3.jpg">
+                    </div>
+
+                    <div id="slide3" class="slide3 slide">
+                        <video autoplay mute loop poster="images/main_video_thum3.jpg">
                             <source src="images/main_video3.mp4" type="video/mp4">
                         </video>
                         <p><span>4차 산업혁명을 현실로 만드는<br />첨단 융복합 기술을 이끌어 가고 있습니다</span></p>
-                    </li>
-                </ul>
+                    </div>
+
+            </div>
+                
                 <!-- //비디오와 글귀 -->
                 <ul class="slide_ctrl">
                     <li><a href="#slide1">1번 슬라이드 이동</a></li>
@@ -227,7 +232,7 @@
                     <button class="next" style="cursor: pointer;">다음</button>
                 </div>
             </div>
-        </div>
+        
         <!-- //메인배너 -->
         <!-- 컨테이너 -->
         <div id="container">
