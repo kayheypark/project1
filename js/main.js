@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    /* 탑버튼 */
+    $(".to_top").click(function(){
+        $("html,body").stop().animate({"scrollTop":0},2000,"swing");
+    });
+
     /* 주메뉴 */
     var $bnnNum=0;
     var $lastNum=$(".slide_wrap>div").size()-1
