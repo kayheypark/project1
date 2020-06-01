@@ -14,114 +14,10 @@
 @font-face {font-family: "NotoSansKR-Regular"; src: url(../font/NotoSansKR-Regular.otf;)}
 @font-face {font-family: "NotoSansKR-Thin"; src: url(../font/NotoSansKR-Thin.otf);}
 
-/* common */
-body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-spacing: -1px;}
-
-/*layout*/
-#wrap {width: 100%; }
-.header_wrap:after {content: ""; display: block; clear: both;}
-
-    .main_banner {}
-    .main_banner:after {content: "";display: block;clear: both;}
-    #container {}
-     .aboutus_warp {}
-     .aboutus_warp .inner {width: 1332px; margin: 0 auto;}
-     .aboutus_warp::after {content: "";display: block;clear: both;}
-     .newsroom_wrap {height: 892px; padding-top: 82px; background: url(../images/bg_newsroom.jpg) repeat-x 0 0;}
-     .newsroom_wrap .inner {width: 1332px; height: 610px; margin: 0 auto; background: #fff;}
-     .product_wrap {}
-     .product_wrap .inner {width: 1332px; margin: 0 auto; margin-bottom: 121px;}
-     #container:after {content: "";display: block;clear: both;}
-    #sitemap_wrap {}
-    #sitemap_wrap .inner {width: 1332px; margin: 0 auto;}
-    #sitemap_wrap:after {content: "";display: block;clear: both;}
-    #footer {width: 1920px; height: 137px; background: #474b50; margin: 0 auto;}
-
-/*헤더*/
-    /*로고*/
-    h1.logo {position: absolute; top: 17px; left: 30px;}
-    /*주메뉴*/
-        /*1단리스트*/
-        header {position: relative; width: 100%; height: 70px; background: #fff;}
-        .header_wrap {z-index: 30; position: absolute; left: 0; top: 0; width: 100%; height: 70px;
-                       border-bottom: 2px solid #333; background: #ccc;}
-        .header_inner{width: 800px;margin: 0 auto}
-       
-
-
-        nav {position: relative; width: 100%;}
-        nav a {text-decoration: none; font-size: 15px; color: #000;}
-        nav > ul {width: 690px; margin: 0 auto;}
-        nav > ul:after {content: ""; display: block; clear: both;}
-        nav > ul > li {text-align: center; line-height: 70px;}
-        nav > ul > li > a {font-weight: bold; font-size: 18px; color: #000; text-decoration: none;}
-        nav > ul > li > ul {display: none; position: absolute; left: 0px; top: 70px; width: 800px; padding: 5px;}
-        nav > ul > li:first-child > ul {left: 50px;}
-        nav > ul > li:nth-child(2) > ul {left: 50px;}
-        nav > ul > li:nth-child(3) > ul {left: 50px;}
-        nav > ul > li:nth-child(4) > ul {left: 50px;}
-        nav > ul > li:last-child > ul {left: 50px;}
-        .depth2_tit {float: left; display: block;  text-align: justify;}
-        .depth2_tit > a {font-size: 16px; font-weight: bold; color: #1428a0; width: 100%;}
-        nav > ul > li:first-child .depth2_tit:nth-last-of-type(2) {padding:0 49px; margin: 0 49px; height: 250px;}
-        .depth2_list  li {line-height: 15px; text-align: justify; margin-top: 15px; }
-        .depth2_list > .depth2_area > li a {display: block; width: 88.28px;}
-        
-        .depth2_area div {float: left;}
-        .left { margin-right: 35px;}
-       
-      
-       
-       nav >ul>li>a {position: relative; float: left; margin-right: 91px; display: inline-block; height: 70px;}
-       nav >ul>li:last-child>a {margin-right: 0px;}
-        nav > ul > li > a::after {content: ""; opacity: 0;
-                                   position: absolute; left: 50%; bottom: 0;
-                                   width: 0; height: 0; background: #1428a0;
-                                   transform: translate(-50%, 0);
-                                   transition: width .4s ease-in-out;
-       
-       }
-       
-        nav > ul > li.on > a::after {content: ""; opacity: 1; width: 100%; height: 3px;}
-       
-        .gnb_inner {position: absolute; width: 1000px; background-color: #ccc;}
+/* mian.css */
 
 
 
-
-
-
-
-
-/*3단리스트*/
-        
-    /* 탑메뉴 */
-    .topMenu_Area {position: absolute; top: 0;  right: 0px; width: 180px; height: 70px;}
-            .topMenu {position: relative;}
-            .topMenu dt {float: left;}
-            .topMenu dt a {display: block; width: 60px; height: 70px; font-size: 12px; line-height: 70px; text-align: center; text-decoration: none; font-weight: bold; color: #000;}
-            .topMenu dd {display: none; position: absolute; top: 69px; width: 60px; height: 188px; background: #fff; border-top: 5px solid #043285;}
-                
-                /*SNS*/
-                .topMenu dd ul li a {display: block; width: 30px; height: 30px; margin: 12px auto; border: 1px solid #ddd; border-radius: 15px; background: #ddd url(../images/utill_sns_ico.png) no-repeat -30px 0; text-indent: -9999px; overflow: hidden;}
-                .topMenu dd ul li:nth-child(2) a{background-position: -60px 0 ;}
-                .topMenu dd ul li:nth-child(3) a{background-position: -0px 0 ;}
-                .topMenu dd ul li:nth-child(4) a{background-position: -120px 0 ;}
-                
-                /*언어선택*/
-                .topMenu dd.lang { left: 60px; height: 154px; padding-top: 4px;}
-                .topMenu dd.lang ul {padding-top: 5px;}
-                .topMenu dd.lang ul li {}
-                .topMenu dd.lang ul li a {text-indent:0; background: none; border: none; border-radius: 0; margin-bottom: 12px;}
-                .topMenu dd.lang ul li a {text-decoration: none; font-size: 14px; color: #333;}
-
-                        .topMenu dt:first-child:hover + dd,
-                        .topMenu dt.lang:hover + dd.lang,
-                        #wrap .sns:hover,
-                        #wrap .lang:hover {display: block;}
-
-                /*검색버튼*/
-            .btn_srch {float: left; background: #043285; width: 42px; height: 52px; padding-top: 18px; padding-left: 18px;}
 
 /*메인배너*/
 .main_visual {position: relative;}
@@ -142,7 +38,6 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 .main_banner div p {
     position: absolute;
     top: 28%;
-    left: 50%x;
     color: #fff;
     opacity: 0.85;
     font-size: 40px;
@@ -193,7 +88,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
 
 
 /*컨테이너*/
-#container {margin-top: 90px;}
+/* #container {margin-top: 90px;} */
     /*기업소개*/
 
     .aboutus_warp {}
@@ -210,7 +105,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     .aboutus_warp .inner ul li:nth-child(3) {background-image: url(../images/icon_aboutus_03.png);}
     .aboutus_warp .inner ul li:nth-child(4) {padding-left: 25px; border-right: none; width: 300px; background-image: url(../images/icon_aboutus_04.png);}
     .aboutus_warp dt {font-weight: bold;padding-top: 100px;}
-    .aboutus_warp dd {padding-top: 40px; font-size: 25px; font-weight: 1;}
+    .aboutus_warp dd {padding-top: 40px; font-size: 25px; font-weight: 100;}
     span.num {font-size: 45px; font-weight: 100;}
     p.more {display: block; width: 140px; height: 45px; margin: 0 auto;}
     p.more a {float: left; display: block;
@@ -254,7 +149,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
             line-height: 45px; text-indent: 17px;
             background: #fff url(../images/btn_arrow_ico_g.png) no-repeat 125px 50%;
         }
-        .social_wrap {float: left; width: 420px; height: 17 1px;  padding-top: 20px; }
+        .social_wrap {float: left; width: 420px; height: 171px;  padding-top: 20px; }
         .social_wrap ul li a {float: left; display: block; width: 60px; height: 60px; text-indent: -9999px; overflow: hidden;
         background: url(../images/icon_social.png) no-repeat 0 0;
         margin-right: 40px;
@@ -285,7 +180,7 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     .product_wrap .inner p {font-size: 16px; color: #333; margin-bottom: 24px;}
     .product_wrap .inner ul {width: 350px; height: 246px; border-top: 2px solid #043285;}
     .product_wrap .inner ul li {line-height: 81px; border-bottom: 1px solid #cccccc;}
-    .product_wrap .inner ul li a {display: block; width: 350px; height: 81px; font-size: 18px; font-weight: 550; color: #333; text-decoration: none;
+    .product_wrap .inner ul li a {display: block; width: 350px; height: 81px; font-size: 18px; font-weight: 500; color: #333; text-decoration: none;
     background : url(../images/icon_btn_arrow_b.png) no-repeat 100% 50%;
     
     
@@ -298,44 +193,6 @@ body {font-size: 18px;font-family: 'NotoSansKR';font-family: 'NotoSans'; letter-
     #sitemap_wrap .inner > ul > li {display: block; width: 248px; height: 420px; float: left; }
     #sitemap_wrap .inner > ul > li:last-child {width: 100px; float: right;}
     #sitemap_wrap .inner > ul > li > a {font-size: 18px; color: #333; font-weight: bold; text-decoration: none;}
-    #sitemap_wrap .inner > ul  li > ul > li > a {font-size: 15px; color: #666; font-weight: thin; text-decoration: none;}
+    #sitemap_wrap .inner > ul  li > ul > li > a {font-size: 15px; color: #666; text-decoration: none;}
     #sitemap_wrap .inner > ul > li > ul {margin-top: 31px;}
     #sitemap_wrap .inner > ul > li > ul > li {margin-bottom: 20px;}
-
-/*푸터*/
-#footer { font-size: 14px;}
-#footer .inner {width: 1141px; height: 137px; margin: 0 auto;}
-/*푸터탑*/
-.footer_top {height: 63px; border-bottom: 1px solid #6c6f73;}
-.footer_top .list1 ul {padding-top: 30px;}
-.footer_top .list1 ul li {}
-.footer_top .list1 ul li a {float: left;   color: #fff; text-decoration: none; padding-right: 15px; padding-left: 15px; border-right: 1px solid #8c8e90;}
-.footer_top .list1 ul li:first-child a {padding-left: 0;}
-.footer_top .list1 ul li:last-child a {border:none;}
-
-    /*SNS,인증마크*/
-    .list2 {float: right; width: 162px; margin-top: -5px;}
-    .list2 ul li {float: left; text-indent: -9999px; overflow: hidden; padding-top: 5px;}
-    .list2 ul li a {display: block; width: 30px; height: 19px; background: url(../images/sns_link_ico.png) no-repeat -30px 0;}
-    .list2 ul li:nth-child(2) a {background-position-x: 0px; margin-left: 10px;}
-    .list2 ul li:nth-child(3) a {background-position-x: -60px;}
-    .list2 ul li:nth-child(4) a {background-position-x: -90px;}
-    .list2 p.mark { float: right;}
- 
-/*푸터바텀*/
-.foooter_bot {}
-.foooter_bot .list3 {padding-top: 15px;}
-.foooter_bot .list3 ul li {float: left;}
-.foooter_bot .list3 ul li a {text-decoration: none; color: #b2b2b4; margin-right: 29px;}
-.foooter_bot .list3 ul li:nth-child(3) a {color: #1cbeef;}
-
-.copyright {float: right; color: #b2b2b4; letter-spacing: 0px;}
-
-
-/*탑으로버튼*/
-.to_top {position: fixed; bottom: 15%; right: 10%; line-height: 75px;}
-.to_top a {display: block; width: 60px;  height: 60px;
-    border: 1px solid #111;
-    text-align: center; text-decoration: none; color:  black;
-background: #fff url(../images/top_btn_ico.png) no-repeat 50% 10px;
-}

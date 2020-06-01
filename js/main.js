@@ -37,4 +37,34 @@ $(document).ready(function () {
         }
     });
 
+
+
+//주메뉴슬라이딩
+        //<![CDATA[
+        $("nav>ul>li>a").bind("mouseover focus", function () {
+            $(".header_wrap").animate({
+                "height": "500px"
+            }, 300, "linear");
+
+            $("nav>ul>li>ul").css("display", "none");
+            $(this).next().css("display", "block");
+
+            $("nav>ul>li").removeClass("on");
+            $(this).parent().addClass("on");
+
+        });
+
+        $("nav").bind("mouseleave blur", function () {
+            $(".header_wrap").stop().animate({
+                "height": "70px"
+            }, 300, "linear");
+            $("nav>ul>li>ul").css("display", "none");
+
+            $("nav>ul>li").removeClass("on");
+
+        });
+        //]]>
+
+    
+
 }); // 독레디닫기
