@@ -29,10 +29,8 @@
 
 
 
-.main_banner {}
 .main_banner .inner {position: relative; width: 1920px; margin: 0 auto;}
 .main_banner div {}
-.main_banner div {position: relative;}
 .main_banner div video {position: relative;}
 
 .main_banner div p {
@@ -62,6 +60,9 @@
     }
     .slide_ctrl li a:hover {border: 1px solid #fff; border-radius: 10px;
         background: #fff;}
+    .slide_ctrl li a.active {border: 1px solid #fff; border-radius: 10px;
+        background: #fff;}
+
 
     .slide_ctrl li.pause {padding-top: 1.5px;}
     .slide_ctrl li.pause a {
@@ -92,7 +93,7 @@
     /*기업소개*/
 
     .aboutus_warp {}
-    .aboutus_warp .inner {height: 510px;}
+    .aboutus_warp .inner {height: 510px;     padding: 80px 0 50px 0;}
     .inner h2 {font-weight: bold; font-size: 35px; text-align: center; margin-bottom: 71px;}
     .aboutus_warp .inner ul { width: 1200px; margin: 0 auto; margin-left: 180px;}
     .aboutus_warp .inner ul li {float: left; 
@@ -196,3 +197,5 @@
     #sitemap_wrap .inner > ul  li > ul > li > a {font-size: 15px; color: #666; text-decoration: none;}
     #sitemap_wrap .inner > ul > li > ul {margin-top: 31px;}
     #sitemap_wrap .inner > ul > li > ul > li {margin-bottom: 20px;}
+
+

@@ -25,14 +25,19 @@
         nav > ul > li:nth-child(4) > ul {left: 50px;}
         nav > ul > li:last-child > ul {left: 50px;}
         .depth2_tit {float: left; display: block;  text-align: justify;}
+
+        .line1 { display: block; width: 1px; height: 230px; background: #ddd; position: absolute; left: 147px; top: 36px;}
+        .line2 { display: block; width: 1px; height: 230px; background: #ddd; position: absolute; right: 341px; top: 36px;}
+        
         .depth2_tit > a {font-size: 16px; font-weight: bold; color: #1428a0; width: 100%;}
-        nav > ul > li:first-child .depth2_tit:nth-last-of-type(2) {padding:0 49px; margin: 0 49px; height: 250px;}
-        .depth2_list  li {line-height: 15px; text-align: justify; margin-top: 15px; }
+        nav > ul > li:first-child .depth2_tit:nth-last-of-type(2) {padding:0 55px; margin: 0 55px; height: 250px;}
+        .depth2_list  li {line-height: 20px; text-align: justify; margin-top: 15px; }
         .depth2_list > .depth2_area > li a {display: block; width: 88.28px;}
         
-        .depth2_area div {float: left;}
-        .left { margin-right: 35px; display: inline-block;}
-        .right {display: inline-block;}
+        .depth2_area > ul {}
+        li.left {margin-right: 70px; margin-top: -18px; float: left;}
+        li.right {float: right; margin-top: -18px;}
+
        
       
        

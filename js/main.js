@@ -2,10 +2,23 @@ $(document).ready(function () {
 
     /* 탑버튼 */
     $(".to_top").click(function(){
-        $("html,body").stop().animate({"scrollTop":0},2000,"swing");
+        $("html,body").stop().animate({"scrollTop":0},1200,"swing");
+    });
+    /*탑버튼(스크롤탑=0일시 안보이게)*/
+    $(window).scroll(function(){
+        var nowScroll = $(this).scrollTop();
+        console.log(nowScroll);
+        if(nowScroll<100){
+            $(".to_top").addClass("on");
+            
+        }else{
+            $(".to_top").removeClass("on");
+
+        }
     });
 
-    /* 주메뉴 */
+
+    /* 배너 */
     var $bnnNum=0;
     var $lastNum=$(".slide_wrap>div").size()-1
     function autoBanner(){
@@ -14,19 +27,21 @@ $(document).ready(function () {
 
         //모든 active 클래스 삭제
         $(".slide_wrap>div").removeClass("active")
+        $(".slide_ctrl li a").removeClass("active")
 
         //active 클래스가 div에 추가되게
         $(".slide_wrap>div").eq($bnnNum).addClass("active")
+        $(".slide_ctrl li a").eq($bnnNum).addClass("active")
 
     }
     var $bnnNum = setInterval(autoBanner,2000);
 
     //배너 재생 멈춤
     var flag = true;
-    $(".btn_play").click(function(){
-        if(flag){
+    $(".pause").click(function(){
+        if(flag==1){
             //멈춰라
-            clearInterval($autoBnn);
+            clearInterval($autoBanner);
             //이미지바꾸기
             flag=false;
         } else {
@@ -37,14 +52,16 @@ $(document).ready(function () {
         }
     });
 
+    //슬라이드 액티브시 동그라미 불들어오기
+    
 
 
 //주메뉴슬라이딩
         //<![CDATA[
         $("nav>ul>li>a").bind("mouseover focus", function () {
             $(".header_wrap").animate({
-                "height": "500px"
-            }, 300, "linear");
+                "height": "380px"
+            }, 200);
 
             $("nav>ul>li>ul").css("display", "none");
             $(this).next().css("display", "block");
