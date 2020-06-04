@@ -23,6 +23,23 @@ $(document).ready(function () {
         }
     });
 
+    /* 탑메뉴 : 검색서식열기 */
+    var srchFlag = false;
+    $(".btn_srch").click(function(){
+        if(srchFlag==0){
+            $(".srch_wrap").css({"display":"block"});
+            $(".dark_area").addClass("on");
+            $(".btn_srch").addClass("on");
+            srchFlag = true;
+        } else {
+            $(".srch_wrap").css({"display":"none"});
+            $(".dark_area").removeClass("on");
+            $(".btn_srch").removeClass("on");
+            srchFlag = false;
+        }
+
+        });
+
 
     /* 배너 */
     var $bnnNum=0;
