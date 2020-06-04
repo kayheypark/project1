@@ -62,10 +62,73 @@
         nav > ul > li:nth-of-type(2) > ul > li.depth2_tit {margin-right: 55px; margin-left: 55px;}
         nav > ul > li:nth-of-type(2) > ul > li.depth2_tit:first-of-type {margin-left: 0px;}
         nav > ul > li:nth-of-type(2) > ul > li.depth2_tit:last-of-type {margin-right: 0px;}
-        nav > ul > li:nth-of-type(2) > ul  li.depth2_tit:after {content: ''; display: block; width: 1px; height: 100%; background:#ddd;}
 
+        .line_box:first-of-type {position: absolute; left: 165px;}
+        nav > ul > li:nth-of-type(2) .line:nth-of-type(1) {position: absolute; top: 35px; left: 0; display: block; width: 1px; height: 103px; background: #ddd;}
+        nav > ul > li:nth-of-type(2) .line:nth-of-type(2) {position: absolute; top: 35px; left: 170px; display: block; width: 1px; height: 103px; background: #ddd;}
+        nav > ul > li:nth-of-type(2) .line:nth-of-type(3) {position: absolute; top: 35px; left: 370px; display: block; width: 1px; height: 103px; background: #ddd;}
+        nav > ul > li:nth-of-type(2) .line:nth-of-type(4) {position: absolute; top: 35px; left: 540px; display: block; width: 1px; height: 103px; background: #ddd;}
+        
+        /* 3. 뉴스룸 */
+        nav > ul > li:nth-of-type(3) {}
+        nav > ul > li:nth-of-type(3) > ul {padding-left: 260px;}
+        nav > ul > li:nth-of-type(3) > ul > li.depth2_tit {margin-right: 55px; margin-left: 55px;}
+        nav > ul > li:nth-of-type(3) > ul > li.depth2_tit:first-of-type {margin-left: 0px;}
+        nav > ul > li:nth-of-type(3) > ul > li.depth2_tit:last-of-type {margin-right: 0px;}
+        
+        .line_box:nth-of-type(2) {position: absolute; left: 165px;}
+        nav > ul > li:nth-of-type(3) .line:nth-of-type(2) {position: absolute; top: -111px; left: 180px; display: block; width: 1px; height: 103px; background: #ddd;}
+        
+        /* 4. 제품정보 */
+        nav > ul > li:nth-of-type(4) {}
+        nav > ul > li:nth-of-type(4) > ul {height: 400px;}
+        nav > ul > li:nth-of-type(4) > ul > li.depth2_tit {margin-right: 65px; margin-left: 55px;}
+        nav > ul > li:nth-of-type(4) > ul > li.depth2_tit:first-of-type {margin-left: 0px;}
+        nav > ul > li:nth-of-type(4) > ul > li.depth2_tit:last-of-type {margin-right: 0px;}
+        
+        .line_box3 {position: absolute; left: 135px;}
+        nav > ul > li:nth-of-type(4) .line:nth-of-type(1) {position: absolute; top: 35px; left: 12px; display: block; width: 1px; height: 190px; background: #ddd;}
+        nav > ul > li:nth-of-type(4) .line:nth-of-type(2) {position: absolute; top: 35px; left: 228px; display: block; width: 1px; height: 190px; background: #ddd;}
+        nav > ul > li:nth-of-type(4) .line:nth-of-type(3) {position: absolute; top: 35px; left: 455px; display: block; width: 1px; height: 190px; background: #ddd;}
 
+        /* 더보기 박스 : Product Search & Component Library */
+       /* 공통 */
+        .moreBox {position: absolute; top: 263px;}
+        .moreBox a { display: block; background: #fff url(../images/btn_arrow_ico_l.png) no-repeat 95% 50%;
+                    box-sizing: border-box; width: 340px; height: 78px; padding: 17px 20px;
+                    border-radius: 7px;
+                    border: 1px solid #e2e2e2;}
+        .moreBox a strong {font-size: 18px; font-weight: 600; position: absolute; top: -10px; left: 17px;}
+        .moreBox a p {position: absolute; left: 17px; color: #333; font-size: 14px;}
 
+        .moreBox1 {}
+        .moreBox1 a {}
+        .moreBox1 a strong {}
+        .moreBox1 a p {}
+
+        .moreBox2 {left: 385px;}
+        .moreBox2 a {}
+        .moreBox2 a strong {}
+        .moreBox2 a p {}
+        
+        
+        /* 5. 고객지원 */
+        nav > ul > li:nth-of-type(5) {}
+        nav > ul > li:nth-of-type(5) > ul {width: 1100px; margin-left: -150px;}
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit {margin-right: 65px; margin-left: 55px;}
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit:first-of-type {margin-left: 0px;}
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit:last-of-type {margin-right: 0px;}
+
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit:nth-of-type(5) {height: 40px;}
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit:nth-of-type(6) {height: 40px;}
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit:nth-of-type(7) {height: 40px;}
+        nav > ul > li:nth-of-type(5) > ul > li.depth2_tit:nth-of-type(8) {height: 40px;}
+        
+        .line_box4 {position: absolute; left: 135px;}
+        nav > ul > li:nth-of-type(5) .line:nth-of-type(1) {position: absolute; top: 35px; left: -5px; display: block; width: 1px; height: 130px; background: #ddd;}
+        nav > ul > li:nth-of-type(5) .line:nth-of-type(2) {position: absolute; top: 35px; left: 209px; display: block; width: 1px; height: 130px; background: #ddd;}
+        nav > ul > li:nth-of-type(5) .line:nth-of-type(3) {position: absolute; top: 35px; left: 422px; display: block; width: 1px; height: 130px; background: #ddd;}
+        nav > ul > li:nth-of-type(5) .line:nth-of-type(4) {position: absolute; top: 35px; left: 685px; display: block; width: 1px; height: 130px; background: #ddd;}
 
 
 
