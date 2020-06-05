@@ -63,7 +63,7 @@
         nav > ul > li:nth-of-type(2) > ul > li.depth2_tit:first-of-type {margin-left: 0px;}
         nav > ul > li:nth-of-type(2) > ul > li.depth2_tit:last-of-type {margin-right: 0px;}
 
-        .line_box:first-of-type {position: absolute; left: 165px;}
+        .line_box22 {position: absolute; left: 165px;}
         nav > ul > li:nth-of-type(2) .line:nth-of-type(1) {position: absolute; top: 35px; left: 0; display: block; width: 1px; height: 103px; background: #ddd;}
         nav > ul > li:nth-of-type(2) .line:nth-of-type(2) {position: absolute; top: 35px; left: 170px; display: block; width: 1px; height: 103px; background: #ddd;}
         nav > ul > li:nth-of-type(2) .line:nth-of-type(3) {position: absolute; top: 35px; left: 370px; display: block; width: 1px; height: 103px; background: #ddd;}
@@ -76,8 +76,8 @@
         nav > ul > li:nth-of-type(3) > ul > li.depth2_tit:first-of-type {margin-left: 0px;}
         nav > ul > li:nth-of-type(3) > ul > li.depth2_tit:last-of-type {margin-right: 0px;}
         
-        .line_box:nth-of-type(2) {position: absolute; left: 165px;}
-        nav > ul > li:nth-of-type(3) .line:nth-of-type(2) {position: absolute; top: -111px; left: 180px; display: block; width: 1px; height: 103px; background: #ddd;}
+        .line_box33 {position: absolute; left: 165px;}
+        nav > ul > li:nth-of-type(3) .line:nth-of-type(2) {position: absolute; top: -127px; left: 180px; display: block; width: 1px; height: 103px; background: #ddd;}
         
         /* 4. 제품정보 */
         nav > ul > li:nth-of-type(4) {}
